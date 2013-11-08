@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 
 gem 'devise'
-gem 'simple_form
+gem 'simple_form'
 
 group :development, :test do
 	gem 'sqlite3'
