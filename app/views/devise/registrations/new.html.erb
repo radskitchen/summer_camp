@@ -1,26 +1,29 @@
-<div class="row">
-  <div class="span4">
-    <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
+<div class="spaced">
+    <div class="row">
+      <div class="span4">
 
-      <fieldset>
-        <legend>Sign Up</legend>
-          <%= devise_error_messages! %>
-          
-          <%= f.input :first_name %>
-          <%= f.input :last_name %>
-          <%= f.input :profile_name %>
-          <%= f.input :email %>
-          <%= f.input :password %>
-          <%= f.input :password_confirmation %>
+        
 
-          <div><%= f.button :submit, "Sign up" %></div>
-      </fieldset>
-    <% end %>
+        <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
 
-    <%= render "devise/shared/links" %>
-  </div>  
+          <fieldset>
+            <legend>Sign Up</legend>
+              <%= f.input :first_name %>
+              <%= f.input :last_name %>
+              <%= f.input :profile_name %>
+              <%= f.input :email %>
+              <%= f.input :password %>
+              <%= f.input :password_confirmation %>
 
-  <div class="span8">
-    <h2>Signing up is fun!</h2> 
-  </div>
+              <div><%= f.button :submit, "Sign up" %></div>
+          </fieldset>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+      </div>  
+
+      <div class="span8"> 
+        <%= devise_error_messages! %>
+      </div>
+    </div>
 </div>
