@@ -3,3 +3,9 @@ rad:
   last_name: "chad"
   email: "chad@radchad.net"
   profile_name: "radchad"
+
+johnny:
+  first_name: "Johnny"
+  last_name: "Marr"
+  email: "johnny@thesmiths.com"
+  profile_name: "johnnymarr"
